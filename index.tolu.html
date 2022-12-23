@@ -1,0 +1,351 @@
+<html>
+
+<head>
+  <title>St Simeon's Website</title>
+</head>
+<style>
+  body {
+    font-family: "Lato", sans-serif;
+    transition: background-color .5s;
+  }
+
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  #main {
+    transition: margin-left .5s;
+    padding: 16px;
+  }
+
+  @media screen and (max-height: 450px) {
+    .sidenav {
+      padding-top: 15px;
+    }
+
+    .sidenav a {
+      font-size: 18px;
+    }
+  }
+</style>
+<style>
+  .sidenav a,
+  .dropdown-btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+  }
+
+  .sidenav a:hover,
+  .dropdown-btn:hover {
+    color: #f1f1f1;
+  }
+
+  .main {
+    margin-left: 200px;
+    font-size: 20px;
+    padding: 0px 10px;
+  }
+
+  .active {
+    background-color: blue;
+    color: white;
+  }
+
+  .dropdown-container {
+    display: none;
+    background-color: #262626;
+    padding-right: 8px;
+  }
+
+  .fa-caret-down {
+    float: right;
+    padding-right: 8px;
+  }
+
+  @media screen and (max-height: 450px) {
+    .sidenav {
+      padding-top: 15px;
+    }
+
+    .sidenav a {
+      font-size: 18px;
+    }
+  }
+    .avatar {
+    vertical-align: middle;
+    width: 250px;
+    height: 200px;
+    border-radius: 50%;
+  }
+  div.first {
+    background-color: yellowgreen;
+  }
+
+  div.second {
+    background-color: plum;
+  }
+  div.third {
+    background-color: purple;
+  }
+  #more {display: none;}
+  </style>
+<nav>
+  <div id="mySidenav" class="sidenav">
+    <button class="dropdown-btn">About
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+      <a href="history.php">History</a>
+    </div>
+    <button class="dropdown-btn">Contact
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+      <a href="contact.php">Contact Us</a>
+    </div>
+    <button class="dropdown-btn">Department
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+      <a href="acm.php">Anglican Children Ministry</a>
+      <a href="ayf.php">Anglican Youth Fellowship</a>
+      <a href="choir.php">Choir</a>
+      <a href="gos.php">Guild Of Steward</a>
+      <a href="MF.php">Men Fellowship</a>
+      <a href="wo.php">Women Organisation</a>
+    </div>
+    <button class="dropdown-btn">Gallery
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+      <a href="pic.php">Pictures</a>
+    </div>
+  </div>
+
+  <div id="main">
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+  </div>
+  
+</nav>
+<style>
+
+</style>
+
+<body>
+  <div class="closebtn" onclick="closeNav()">
+  <center>
+    <h1>Welcome To St Simeon's Anglican Church</h1>
+  </center>
+  <marquee>
+    <b>You Are Welcome</b>
+  </marquee>
+  <p>Located at <b>Plot 1 Block VII, Oba Afunbiowo Housing Estate Akure, Ondo State.</b> St Simeon's is a multi-cultural
+    community of people of all ages, celebrating christianity through christian education, outreach and worship.</p>
+  Whatever your background, you will find a warm welcome with us.
+  <p><b>Our weekly activities includes:</b></p>
+  1) Sunday morning worship is held by 8:30am at the church premises.
+  <p>2) We also have an evening house fellowship every Sunday evening at Dr Olowosusi's residence by 5:30pm.</p>
+  3) We also hold mid-week prayer meeting every wednesday by 5:30pm at the church premises.
+
+  <div class="first">
+    <center>
+      <h1>Upcoming Event</h1>
+    </center>
+    <center>Annual General Thanksgiving</center>
+    <center>04/12/2022</center>
+  </div>
+
+  <div class="second">
+
+    <center>
+      <h1>
+        <p id="demo"></p>
+      </h1>
+    </center>
+
+    <script>
+
+      
+    </script>
+  </div>
+
+  <center>
+    <h1>Meet Our Vicar</h1>
+  </center>
+  <center>
+    <h2>Vicar In Charge</h2>
+  </center>
+  <center><img src="images/IMG-20220907-WA0049.jpg" alt="Avatar" class="avatar"></center>
+  <br>
+  <center><b>Rev Abiodun O Omotosho</b></center>
+  <p>
+    St Simeon's Anglican Church,Idanre, Akure, Ondo State, Nigeria, was established on 10th of January 2016.</p>
+    The Church is pragmatically committed to the development of her members in all ramifications.The Church is committed
+    to the wholistic teaching of our Lord Jesus Christ. Through these wholistic ministry, her members is been developed
+    both physically and spiritually.
+    The activities of the church includes: Sunday service by 8:30am, which is an English service
+    The weekly activities of the church are: Prayer meetings, bible study, Evangelism/Visitation and the Church Choir
+    rehearsal.
+    <span id="dots">...</span>
+    <span id="more">Members of the church are well commited to attending church programmes and
+      these reflects greatly in their positive response to God's work. The Church is involved in social programs like
+      caring and assistance to the needy people and also indigent students in tertiary institutions.
+      The church could be described as a living church where living stones are made for christ and not dead stones.
+    </span>
+  </p>
+  <center><button onclick="myFunction()" id="myBtn">Read more</button></center>
+
+  <script>
+
+  </script>
+
+  <div class="third">
+    <center>
+      <h1>Contact Us</h1>
+    </center>
+    <center>
+      <p>Contact us for any information or update.</p>
+    </center>
+    <p>
+      <center>St Simeon's Anglican Church Oba Afunbiowo Housing Estate Akure</center>
+    </p>
+    <p>
+      <center>Ondo State Nigeria.</center>
+    </p>
+
+    <h4>
+      <center><img src="images/1608790_phone_icon.png" width="30" height="15">PHONE</center>
+    </h4>
+    <center>+2348032339445</center>
+
+    <h4>
+      <center><img src="images/Message-Silhouette-Transparent-Images.png" width="20" height="10">Email:</center>
+    </h4>
+    <center>stsimeonanglicanchurch@gmail.com</center>
+
+    <h4>
+      <center>SOCIAL CONNECTION</center>
+    </h4>
+    <h5>
+      <center>You can connect social area for any update</center>
+    </h5>
+    <center><img src="images/logo-facebookpng-32257(0).png" width="40" height="20"><img
+        src="images/580b57fcd9996e24bc43c521-1.png" width="40" height="20"><img
+        src="images/icons8-twitter-circled-480.png" width="40" height="20"></center>
+
+    <center>
+      <td align="center">&copy;2022 ST SIMEON'S ANGLICAN CHURCH OBA AFUNBIOWO HOUSING ESTATE AKURE.</td>
+    </center>
+  </div>
+</div>
+</body>
+
+<script>
+  var countDownDate = new Date("Dec 19, 2022 00:00:00").getTime();
+
+      var x = setInterval(function () {
+
+        var now = new Date().getTime();
+
+        var distance = countDownDate - now;
+
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+          + minutes + "m " + seconds + "s ";
+
+        if (distance < 0) {
+          clearInterval(x);
+          document.getElementById("demo").innerHTML = "EXPIRED";
+        }
+      }, 1000);
+
+          function myFunction() {
+      var dots = document.getElementById("dots");
+      var moreText = document.getElementById("more");
+      var btnText = document.getElementById("myBtn");
+
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Read more";
+        moreText.style.display = "none";
+      } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Read less";
+        moreText.style.display = "inline";
+      }
+    }
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+  }
+
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
+    document.body.style.backgroundColor = "white";
+  }
+</script>
+
+<script>
+
+  var dropdown = document.getElementsByClassName("dropdown-btn");
+  var i;
+
+  for (i = 0; i < dropdown.length; i++) {
+    dropdown[i].addEventListener("click", function () {
+      this.classList.toggle("active");
+      var dropdownContent = this.nextElementSibling;
+      if (dropdownContent.style.display === "block") {
+        dropdownContent.style.display = "none";
+      } else {
+        dropdownContent.style.display = "block";
+      }
+    });
+  }
+</script>
+
+</html>
